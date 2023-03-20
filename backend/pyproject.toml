@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "fern_fastapi_starter"
+name = "fern_openapi_starter"
 version = "0.0.0"
 description = ""
 authors = []
 
 [tool.poetry.scripts]
-start = "src.fern_fastapi_starter.server:start"
+start = "src.fern_openapi_starter.server:start"
 
 [tool.poetry.dependencies]
 python = "^3.8"

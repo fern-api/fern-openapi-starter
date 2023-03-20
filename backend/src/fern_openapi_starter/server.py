@@ -2,9 +2,9 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from fern_fastapi_starter.blueprints.movies.controllers import MovieController
+from fern_openapi_starter.blueprints.movies.controllers import MovieController
 from .api.generated.register import register
-from fern_fastapi_starter.blueprints import MovieApi
+from fern_openapi_starter.blueprints import MovieApi
 
 app = FastAPI()
 
@@ -21,7 +21,7 @@ app.add_middleware(
 
 def start() -> None:
     uvicorn.run(
-        "src.fern_fastapi_starter.server:app",
+        "src.fern_openapi_starter.server:app",
         host="0.0.0.0",
         port=8080,
         reload=True,

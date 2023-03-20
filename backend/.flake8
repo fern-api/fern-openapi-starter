@@ -1,3 +1,3 @@
 [flake8]
 max-line-length = 120
-exclude = src/fern_fastapi_starter/api/generated
+exclude = src/fern_openapi_starter/api/generated
